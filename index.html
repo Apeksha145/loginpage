@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>login</title>
+		<meta charset="utf-8 /">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/bootstrap4.css">
+		<script src="js/jquery.min.js" rel="stylesheet"></script>
+		<script src="js/bootstrap.js" rel="stylesheet"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+	</head>
+	<style>
+	body
+	{
+	background-image:url('login.jpg');
+	background-repeat:no-repeat;
+	background-size:cover;
+	margin-left:auto;
+	margin-right:auto;
+	background-position:center;
+	}
+	.main
+	{
+	background-color:#113b40c4;
+	height:300px;
+	width:700px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:12%;
+	margin-bottom:12%;
+	}
+	.signup
+	{
+	color:white;
+	margin-right:auto;
+	margin-top:25%;
+	margin-left:12%;
+	}
+	.signup p
+	{
+	font-size:19px;font-weight: 400;
+	}
+	.signup label
+	{
+	font-size:12px;padding-top:3px;color:#ffffffa3;
+	}
+	.login
+	{
+	color:white;
+	margin-right:auto;
+	margin-top:25%;
+	margin-left:20%;
+	}
+	.login p
+	{
+	font-size:19px;font-weight: 400;
+	}
+	.login label
+	{
+	font-size:12px;
+	padding-top:3px;color:#ffffffa3;
+	}
+	.btn 
+	{
+	border:1px solid #ffffffa3;
+	background-color:transparent;
+	color:white;
+	border-radius:0;
+	padding:2px 30px;
+	font-weight: 500;
+	}
+	@media only screen and (max-width:600px)
+	{
+	.main
+	{
+	background-color:#113b40c4;
+	height:fit-content;
+	width:300px;
+	margin-left:auto;
+	margin-right:auto;
+	}
+	.login
+	{
+	color:white;margin-left:15%;
+	margin-bottom: 15%;
+    color: white;
+    margin-right: auto;
+    margin-top: 15%;
+	}
+	.login p{
+	font-size:19px;font-weight: 400;
+	}
+	.login label
+	{
+	font-size:12px;
+	padding-top:3px;
+	color:#ffffffa3;
+	}
+	.btn
+	{
+	border:1px solid #ffffffa3;
+	background-color:transparent;
+	color:white;
+	border-radius:0;
+	font-weight: 500;
+	}
+	.signup
+	{
+	color:white;
+	margin-left:15%;margin-top:15%;
+	}
+	.signup p
+	{
+	font-size:19px;font-weight:400;
+	}
+	.signup label
+	{
+	font-size:12px;color:#ffffffa3;
+	}
+	.modal-content {width:auto;left:265px;top:7px;height:auto;}
+	.modal-header{text-align:center;display:block;border:0;padding-top:0px;}
+	#l{left:-265px;top:55px;}
+	.btnlogin{padding-top:0px;text-align:center;}
+	}
+	@media only screen and (min-device-width:601px) and (max-device-width:2560px)
+	{
+	.modal-header{text-align:center;display:block;border:0;padding-top:0px;}
+	.modal-content {width:370px;left:195px;top:75px;height:480px;padding-bottom:10px;}
+	.btnlogin{padding-top:15px;text-align:center;}
+	}
+	.btnn{background-color:#c46725fa;border-radius:2px;color:white;border:0;padding:2px 40px;}
+	small{text-align:center;display: block;padding-top:8px;color:#6aa07e;}
+</style>
+	<body>
+		<div class="main">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="signup">
+							<p>Don't have an account?<br />
+							<label>Login into your gym day account<br />with your registered email and <br />password</label></p>
+							<button type="button" class="btn btn-sm" data-toggle="modal" data-target="#basicExampleModal">SIGN UP</button>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="login">
+							<p>Have an account?<br />
+							<label>Login into your gym day account<br />with your registered email and <br />password</label></p>
+							<button type="button" class="btn btn-sm" data-toggle="modal" data-target="#basicExampleModal1">LOGIN</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+<!-- Modal -->
+<div class="modal fade" id="basicExampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document" style="left: -265px;">
+    <div class="modal-content">
+      <div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+	  <div class="container">
+	  <div class="row">
+			<div class="col-sm-12">
+				<h4 style="display:block;text-align:center;">Sign Up</h4>
+			</div>
+		</div>
+		</div>
+        <div class="container pt-4">
+			<div class="row">
+				<div class="col-sm-2"></div>
+				<div class="col-sm-8">
+					<form>
+					<div class="form-group">
+						<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Full name">
+					  </div>
+					  <div class="form-group">
+						<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Phone">
+					  </div>
+					  <div class="form-group">
+						<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+					  </div>
+					  <div class="form-group">
+						<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Password">
+					  </div>
+					  <div class="form-group">
+						<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Confirm Password">
+					  </div>
+					  <div class="btnlogin"><button type="submit" class="btnn btn-lg">SIGN UP</button>
+					</form>
+				</div>
+				<div class="col-sm-2"></div>
+			</div>
+		</div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="modal fade" id="basicExampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+  <div class="modal-dialog" role="document" id="l">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+		
+      </div>
+      <div class="modal-body">
+		<div class="container pt-4">
+		<div class="row">
+			<div class="col-sm-12">
+				<h4 style="display:block;text-align:center;">Log In</h4>
+			</div>
+		</div>
+		</div>
+		<div class="container pt-4">
+			<div class="row">
+				<div class="col-sm-2"></div>
+				<div class="col-sm-8">
+					<form>
+					  <div class="form-group">
+						<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+					  </div>
+					  <div class="form-group">
+						<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+						<small>Forgot password ?</small>
+					  </div>
+					  <div class="btnlogin"><button type="submit" class="btnn btn-lg">LOGIN</button>
+					</form>
+				</div>
+				<div class="col-sm-2"></div>
+			</div>
+		</div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+	</body>
+</html>
